@@ -1,5 +1,7 @@
 # content-filter-example
 
+`content-filter` project page address is https://github.com/efkan/content-filter
+
 To run the example;
  1. Clone or download this repo. <br>
     `git clone https://github.com/efkan/content-filter-example.git && cd content-filter-example`
