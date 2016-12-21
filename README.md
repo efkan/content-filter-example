@@ -1,18 +1,20 @@
 # content-filter-example
 
 To run the example;
- 1. clone or download this repo.
- 2. extract the zipped repo file.
- 3. in the extracted repo directory run the commands below in order <br>
-    `npm install` <br>
-    `node app`
+ 1. Clone or download this repo. <br>
+    `git clone https://github.com/efkan/content-filter-example.git && cd content-filter-example`
+ 2. Run the commands below in order <br>
+    (If you've downloaded the master repo firstly extract the zipped repo file and enter extracted folder directory)<br>
 
- 4. To try it [Postman](https://www.getpostman.com/) or the cURL command below can be used
-```
-curl -X PUT -H "Content-Type: application/json" -H "Cache-Control: no-cache" -d '{
-  "something": "the value of something key",
-  "$*malicous": "test"
-}' "http://localhost:1337/"
-```
+    `npm install && node app`
 
-## And read the code of `app.js` file
+ 4. To try it [Postman](https://www.getpostman.com/) or the cURL command below can be used. <br>
+
+    ```
+    curl -X PUT -H "Content-Type: application/json" -H "Cache-Control: no-cache" -d '{
+      "something": "the value of something key",
+      "$*malicous": "test"
+    }' "http://localhost:1337/"
+    ```
+
+## And look at the code of `app.js` file
