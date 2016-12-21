@@ -1,0 +1,31 @@
+{
+  "name": "content-filter-example",
+  "version": "0.0.1",
+  "description": "An example to show how does content-filter work",
+  "main": "index.js",
+  "keywords": [
+    "content-filter-example"
+  ],
+  "author": {
+    "name": "efkan"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/efkan/content-filter-example.git"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "content-filter": "^1.0.26",
+    "express": "^4.14.0"
+  },
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/efkan/content-filter-example/issues"
+  },
+  "homepage": "https://github.com/efkan/content-filter-example#readme",
+  "devDependencies": {
+    "babel-eslint": "^5.0.0-beta6",
+    "eslint": "^1.10.3"
+  }
+}
