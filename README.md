@@ -7,7 +7,7 @@ To run the example;
     `npm install` <br>
     `node app`
 
- 4. To try it (Postman)[https://www.getpostman.com/] or the cURL command below can be used
+ 4. To try it [Postman](https://www.getpostman.com/) or the cURL command below can be used
 ```
 curl -X PUT -H "Content-Type: application/json" -H "Cache-Control: no-cache" -d '{
   "something": "the value of something key",
