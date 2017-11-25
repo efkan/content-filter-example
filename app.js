@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({ extended: true, limit: '5mb' }))
 /* Writing the coming data onto the console */
 app.use("*", function(req, res, next){
 	if(!req.body || Object.keys(req.body).length == 0) return res.send("req.body doesn't include any data.")
-	console.log("req.body object before the filtering: ", req.body)
+	// console.log("req.body object before the filtering: ", req.body)
 	next()
 })
 
@@ -36,7 +36,8 @@ let filterOptions = {
 	// methodList:['POST', 'PUT', 'DELETE'],
 	// caseSensitive: true, // when true '$NE' word in the body data cannot be catched
 	// checkNames: false, // when false the object property names (AKA key) would not be evaluated
-	dispatchToErrorHandler: true // if this parameter is true, the Error Handler middleware below works!
+	dispatchToErrorHandler: true, // if this parameter is true, the Error Handler middleware below works
+	appendFound: true // appending found forbidden characters to the end of default or user defined error messages
 }
 
 /* Applying the filter */
@@ -47,7 +48,7 @@ app.use("*", function(req, res, next){
 	console.log("A request has passed the content-filter successfully.")
 	console.log("The request method is: ", req.method)
 	console.log("req.originalUrl value: ", req.originalUrl)
-	console.log("req.body object: ", req.body)
+	// console.log("req.body object: ", req.body)
 
 	var resMessage = "The route hit to this URL: " + req.originalUrl;
 	res.send(resMessage)
@@ -71,5 +72,5 @@ app.use(function (err, req, res, next){
 })
 
 app.listen(port, function() {
-	console.log('content-filter-node-app is listening HTTP port ' + port)
+	console.log('content-filter-example is listening HTTP port ' + port)
 })
