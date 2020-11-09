@@ -24,9 +24,5 @@
   "bugs": {
     "url": "https://github.com/efkan/content-filter-example/issues"
   },
-  "homepage": "https://github.com/efkan/content-filter-example#readme",
-  "devDependencies": {
-    "babel-eslint": "^5.0.0-beta6",
-    "eslint": "^1.10.3"
-  }
+  "homepage": "https://github.com/efkan/content-filter-example#readme"
 }
